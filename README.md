@@ -14,7 +14,7 @@ O ciclo de vida completo do projeto foi explorado, desde a análise e limpeza do
 │   ├── raw/
 │   │   └── sentimentdataset.csv       # Dataset original
 │   └── processed/
-│       └── sentimentdataset_tratado_v2.csv # Dataset limpo e enriquecido
+│       └── sentimentdataset_tratado.csv # Dataset limpo e enriquecido
 ├── modelos_salvos
 │   └── modelo_final_otimizado.joblib  # Modelo campeão salvo
 ├── notebooks
@@ -38,7 +38,7 @@ O projeto foi dividido em quatro notebooks principais, seguindo um fluxo de trab
   - Criação de Nuvens de Palavras, que ajudaram a identificar ruídos no texto (como a palavra "like").
   - Análise temporal, mostrando picos de atividade no início da tarde e da noite.
 
-### 2. Modelagem Inicial (`02_modelagem_comparativa.ipynb`)
+### 2. Modelagem Inicial (`02_modelagem.ipynb`)
 - **Pré-processamento de Texto:** Implementação de uma pipeline de limpeza robusta com conversão para minúsculas, remoção de URLs e pontuações, uso de *stopwords* e **lematização**.
 - **Comparação de Modelos:** Treinamento e avaliação de dois modelos base: `Regressão Logística` e `Random Forest`.
 - **Diagnóstico:** Ambos os modelos apresentaram acurácia baixa (~62%) e um `recall` muito fraco para as classes minoritárias (Negativo e Neutro), indicando um comportamento "preguiçoso" devido ao desbalanceamento dos dados.
